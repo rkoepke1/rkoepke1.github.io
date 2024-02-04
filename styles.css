@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
+    color: #333; /* Default text color */
 }
 
 .container {
@@ -30,6 +31,7 @@ nav {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
@@ -55,13 +57,112 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* About Section */
+#about {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: center; /* Center the flex items vertically */
+    background-color: #f0f0f0; /* Light gray background color for about section */
+}
+
+/* About Heading */
+#about h2 {
+    text-align: center; /* Center the heading text */
+}
+/* About Content */
+.about-content {
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Center the flex items vertically */
+    width: 80%; /* Adjust width as needed */
+    max-width: 960px; /* Adjust max-width as needed */
+}
+
+/* Profile Picture */
+.profile-image {
+    flex: 0 0 auto; /* Do not grow, do not shrink, use auto size */
+    margin-right: 50px; /* Add margin to the right of the picture */
+}
+
+.profile-image img {
+    border-radius: 50%; /* Make the image circular */
+    width: 200px; /* Set width to 200px */
+    height: 200px; /* Set height to 200px */
+    object-fit: cover; /* Ensure the image covers the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+/* About Paragraph */
+.about-paragraph {
+    flex: 1; /* Allow the paragraph to grow */
+    margin-left: 20px; /* Add margin to the left of the paragraph */
+}
+
+.about-paragraph p {
+    width: 100%; /* Make the paragraph fill up the entire width of its container */
+    text-align: justify; /* Align paragraph text */
+}
+
 /* Footer */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
+    padding: 5px 0;
+    position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Additional Styles */
+
+/* Welcome Section */
+#welcome {
+    background-color: #1E1E1E; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 50px 0;
+    text-align: center;
+}
+#welcome p {
+    text-align: left;
+}
+/* Welcome Section Title */
+#welcome h1 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+/* About Section Title */
+#about h2 {
+    font-size: 2em;
+    color: #333; /* Dark text color */
+}
+
+/* Resume Section Title */
+#resume h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #333; /* Dark text color */
+}
+
+/* Contact Section Title */
+#contact h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #333; /* Dark text color */
+}
+
+/* Contact List */
+#contact ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Text Color */
+footer p {
+    color: #fff; /* White text color */
+}
+
+/* Footer Link Color */
+footer a {
+    color: #ffc107; /* Yellow link color */
 }
