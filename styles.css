@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #d56f5a;
     color: #333; /* Default text color */
 }
 
@@ -54,21 +54,20 @@ section {
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* About Section */
 #about {
     display: flex;
+    border-radius: 20px; /* Rounded corners */
     justify-content: center; /* Center the flex items horizontally */
     align-items: center; /* Center the flex items vertically */
-    background-color: #f0f0f0; /* Light gray background color for about section */
+    background-color: #b0abaa; /* Light gray background color for about section */
+    border-top: 10px solid #333; /* Border color between sections */
+    border-bottom: 10px solid #333; /* Border color between sections */
 }
 
-/* About Heading */
-#about h2 {
-    text-align: center; /* Center the heading text */
-}
 /* About Content */
 .about-content {
     display: flex;
@@ -118,10 +117,13 @@ footer {
 
 /* Welcome Section */
 #welcome {
-    background-color: #1E1E1E; /* Blue background color */
-    color: #fff; /* White text color */
-    padding: 50px 0;
-    text-align: center;
+    background-color: #1E1E1E; /* Dark mode background color */
+    color: #fff; /* Text color */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Add padding */
+    margin-bottom: 30px; /* Add space between sections */
+    border-top: 10px solid #333; /* Border color between sections */
+    border-bottom: 10px solid #333; /* Border color between sections */
 }
 #welcome p {
     text-align: left;
@@ -129,15 +131,37 @@ footer {
 /* Welcome Section Title */
 #welcome h1 {
     color: #fff;
+    text-align: center; /* Center the heading text */
     font-size: 2.5em;
 }
 
 /* About Section Title */
 #about h2 {
     font-size: 2em;
+    text-align: center; /* Center the heading text */
     color: #333; /* Dark text color */
 }
+/* About Section */
+#resume {
+    display: flex;
+    border-radius: 20px; /* Rounded corners */
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: center; /* Center the flex items vertically */
+    background-color: #b0abaa; /* Light gray background color for about section */
+    border-top: 10px solid #333; /* Border color between sections */
+    border-bottom: 10px solid #333; /* Border color between sections */
+}
 
+/* About Section */
+#contact {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    border-radius: 20px; /* Rounded corners */
+    align-items: center; /* Center the flex items vertically */
+    background-color: #b0abaa; /* Light gray background color for about section */
+    border-top: 10px solid #333; /* Border color between sections */
+    border-bottom: 10px solid #333; /* Border color between sections */
+}
 /* Resume Section Title */
 #resume h2 {
     font-size: 2em;
