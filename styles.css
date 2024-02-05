@@ -60,6 +60,27 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+/* Welcome Section */
+#welcome {
+    display: flex;
+    min-height: 100vh;
+    border-radius: 20px; /* Rounded corners */
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: center; /* Center the flex items vertically */
+    background-color: #b0abaa; /* Light gray background color for about section */
+    border-bottom: 10px solid #333; /* Border color between sections */
+}
+#welcome p {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Welcome Section Title */
+#welcome h1 {
+    color: #333;
+    text-align: center; /* Center the heading text */
+    font-size: 2.5em;
+}
 
 
 /* About Section */
@@ -70,11 +91,16 @@ nav ul li a {
     justify-content: center; /* Center the flex items horizontally */
     align-items: flex-start; /* Center the flex items vertically */
     background-color: #b0abaa; /* Light gray background color for about section */
-    border-bottom: 10px solid #333; /* Border color between sections */
+    border-bottom: 10px solid #333; /* Border color between sections */   
 }
 
+/* About Section Title */
 #about h2 {
-    margin-top: 150px; /* Adjust the margin-top to add space from the top */
+    font-size: 2em;
+    text-align: center; /* Center the heading text */
+    color: #333; /* Dark text color */
+    margin-top: 120px; /* Adjust the margin-top to add space from the top */
+    font-size: 2.5em;
 }
 
 /* About Content */
@@ -84,18 +110,20 @@ nav ul li a {
     align-items: center; /* Center the flex items vertically */
     width: 80%; /* Adjust width as needed */
     max-width: 960px; /* Adjust max-width as needed */
-
 }
 
 /* About Paragraph */
 .about-paragraph {
     flex: 2; /* Increase the flex value to allocate more space */
     margin-left: 20px; /* Add margin to the left of the paragraph */
+    font-weight: bold;
+
 }
 
 .about-paragraph p {
     width: 150%; /* Make the paragraph fill up the entire width of its container */
     text-align: justify; /* Align paragraph text */
+    font-weight: bold;
 }
 
 /* Profile Picture */
@@ -112,50 +140,49 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
 }
 
-/* Additional Styles */
 
-/* Welcome Section */
-#welcome {
+/* About Section */
+#projects {
     display: flex;
     min-height: 100vh;
     border-radius: 20px; /* Rounded corners */
     justify-content: center; /* Center the flex items horizontally */
-    align-items: center; /* Center the flex items vertically */
+    align-items: flex-start; /* Center the flex items vertically */
     background-color: #b0abaa; /* Light gray background color for about section */
     border-bottom: 10px solid #333; /* Border color between sections */
-}
-#welcome p {
-    text-align: left;
-}
-/* Welcome Section Title */
-#welcome h1 {
-    color: #333;
-    text-align: center; /* Center the heading text */
-    font-size: 2.5em;
+    
 }
 
 /* About Section Title */
-#about h2 {
+#projects h2 {
     font-size: 2em;
     text-align: center; /* Center the heading text */
     color: #333; /* Dark text color */
-}
-/* About Section */
-#skills {
-    display: flex;
-    min-height: 100vh;
-    border-radius: 20px; /* Rounded corners */
-    justify-content: center; /* Center the flex items horizontally */
-    align-items: center; /* Center the flex items vertically */
-    background-color: #b0abaa; /* Light gray background color for about section */
-    border-bottom: 10px solid #333; /* Border color between sections */
+    margin-top: 120px; /* Adjust the margin-top to add space from the top */
+    font-size: 2.5em;
 }
 
-/* skills Section Title */
-#skills h2 {
-    font-size: 2em;
-    text-align: center;
-    color: #333; /* Dark text color */
+/* About Content */
+.projects-content {
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Center the flex items vertically */
+    width: 80%; /* Adjust width as needed */
+    max-width: 960px; /* Adjust max-width as needed */
+}
+
+/* About Paragraph */
+.projects-paragraph {
+    flex: 2; /* Increase the flex value to allocate more space */
+    margin-left: 20px; /* Add margin to the left of the paragraph */
+    font-weight: bold;
+
+}
+
+.projects-paragraph p {
+    width: 150%; /* Make the paragraph fill up the entire width of its container */
+    text-align: justify; /* Align paragraph text */
+    font-weight: bold;
 }
 
 /* Footer */
@@ -172,7 +199,7 @@ footer {
     align-items: center; /* Vertically center the content */
 }
 
-/* skills Section Title */
+/* projects Section Title */
 footer h2 {
     font-size: 1em;
     text-align: center;
