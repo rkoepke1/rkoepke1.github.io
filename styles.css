@@ -140,49 +140,49 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
 }
 
-
 /* About Section */
 #projects {
     display: flex;
+    flex-direction: column; /* Change the direction to column to spread items vertically */
     min-height: 100vh;
     border-radius: 20px; /* Rounded corners */
     justify-content: center; /* Center the flex items horizontally */
-    align-items: flex-start; /* Center the flex items vertically */
+    align-items: center; /* Adjust alignment to center after changing flex direction */
     background-color: #b0abaa; /* Light gray background color for about section */
     border-bottom: 10px solid #333; /* Border color between sections */
-    
+    padding: 50px 0; /* Add padding to the top and bottom for spacing */
 }
 
 /* About Section Title */
 #projects h2 {
-    font-size: 2em;
+    font-size: 2.5em; /* Consolidate font size */
     text-align: center; /* Center the heading text */
     color: #333; /* Dark text color */
-    margin-top: 120px; /* Adjust the margin-top to add space from the top */
-    font-size: 2.5em;
+    margin-bottom: 50px; /* Add space below the title */
 }
 
 /* About Content */
 .projects-content {
     display: flex;
-    justify-content: space-between; /* Align items with space between them */
-    align-items: center; /* Center the flex items vertically */
+    flex-direction: column; /* Change direction to column to stack items vertically */
+    justify-content: space-around; /* Adjust to space-around for even spacing */
+    align-items: center; /* Center items */
     width: 80%; /* Adjust width as needed */
     max-width: 960px; /* Adjust max-width as needed */
+    margin-bottom: 50px; /* Add space between each project content */
 }
 
 /* About Paragraph */
 .projects-paragraph {
-    flex: 2; /* Increase the flex value to allocate more space */
-    margin-left: 20px; /* Add margin to the left of the paragraph */
+    margin: 20px 0; /* Add margin to the top and bottom for spacing */
     font-weight: bold;
-
+    text-align: justify; /* Justify text for better readability */
 }
 
 .projects-paragraph p {
-    width: 150%; /* Make the paragraph fill up the entire width of its container */
-    text-align: justify; /* Align paragraph text */
-    font-weight: bold;
+    width: 100%; /* Adjust width to 100% for consistency */
+    margin: 10px 0; /* Add space between paragraphs */
+    font-weight: normal; /* Adjust font-weight as needed */
 }
 
 /* Footer */
